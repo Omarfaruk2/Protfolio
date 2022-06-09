@@ -1,0 +1,13 @@
+.color {
+    color: #0fb;
+}
+
+.background {
+    background-color: #0fb;
+}
+
+@media only screen and (max-width: 576px) {
+    .bannerImg img {
+        width: 100%;
+    }
+}
