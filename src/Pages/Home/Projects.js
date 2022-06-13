@@ -4,15 +4,24 @@ import "../Home/Projects.css"
 import img1 from "../../../src/img/sc1.png"
 import img2 from "../../../src/img/sc2.png"
 import img3 from "../../../src/img/sc3.png"
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+// ..
+AOS.init()
 
 
 const Projects = () => {
 
     return (
-        <div className='container py-5' >
-            <h2 className='text-white mb-5'>My Projects</h2>
+        <div id='project' className='container py-5' >
+            <h2 className='text-white mb-5' data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">My Projects</h2>
             <div className='row m-0 p-0'>
-                <div className='col-lg-4' data-aos="fade-right">
+                <div className='col-lg-4'
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="700"
+                >
                     <Card className='p-2'>
                         <Card.Img variant="top" src={img1} />
                         <Card.Body>
@@ -41,7 +50,11 @@ const Projects = () => {
                 </div>
 
                 {/* Number 2 */}
-                <div className='col-lg-4'>
+                <div className='col-lg-4'
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1100"
+                >
                     <Card className='p-2'>
                         <Card.Img variant="top" src={img2} />
                         <Card.Body>
@@ -71,7 +84,11 @@ const Projects = () => {
                     </Card>
                 </div>
                 {/* Number 3 */}
-                <div className='col-lg-4'>
+                <div className='col-lg-4'
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000"
+                >
                     <Card className='p-2'>
                         <Card.Img variant="top" src={img3} />
                         <Card.Body>

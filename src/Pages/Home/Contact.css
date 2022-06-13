@@ -1,0 +1,20 @@
+.icon {
+    font-size: 40px;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #0fb;
+}
+
+.width {
+    width: 100%;
+}
+
+.inputFrom {
+    border-radius: 20px;
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    background-color: #212121;
+    border-color: #0fb;
+}

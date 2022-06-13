@@ -14,14 +14,14 @@ const Navber = () => {
             <Navbar collapseOnSelect expand="lg" className='navimg ' variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img className='text-white' width="50px" src={logo1} alt="" />
+                        <img className='text-white' width="70px" src={logo1} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className='ms-auto'>
-                            <Nav.Link href="#deets">Home</Nav.Link>
-                            <Nav.Link href="#deets">About</Nav.Link>
-                            <Nav.Link href="#deets">Service</Nav.Link>
+                            <Nav.Link href="#home">Home</Nav.Link>
+                            <Nav.Link href="#about">About</Nav.Link>
+                            <Nav.Link href="#project">Project</Nav.Link>
                             <Nav.Link href="#deets">Portfolio</Nav.Link>
                             <Nav.Link href="#deets">Contace Me</Nav.Link>
                             <Nav.Link href="#deets">
