@@ -1,10 +1,45 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./Contact.css"
 import { GeoAltFill, Envelope, Telephone } from 'react-bootstrap-icons'
+import emailjs from '@emailjs/browser'
 // AiOutlineEnvironment
 // {/* <Envelope></Envelope> <Telephone></Telephone> */}
 
 const Contact = () => {
+    const form = useRef()
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault()
+
+        // const name = event.target.name.value
+        // const email = event.target.email.value
+        // const number = event.target.number.value
+        // const textarea = event.target.textarea.value
+
+        // const data = {
+        //     name: name,
+        //     email: email,
+        //     number: number,
+        //     textarea: textarea,
+        // }
+
+
+        emailjs.sendForm('service_cns8tpm', 'template_fszc5oj', form.current, 'TxwQ895uVKQmBOcFr')
+            .then((result) => {
+                console.log(result.text)
+            }, (error) => {
+                console.log(error.text)
+            })
+
+        // console.log("submitted", data)
+
+
+        // event.target.name.value = ""
+        // event.target.email.value = ""
+        // event.target.number.value = ""
+        // event.target.textarea.value = ""
+    }
+
 
     return (
         <div className='py-5'>
@@ -16,18 +51,14 @@ const Contact = () => {
                 <p>I am available to work on your projects and bring your ideas to life. I am just a click away.</p>
             </div>
             <div className=' text-white row m-0 p-0'>
-
                 <div className="col-lg-2"></div>
-
                 <div className="col-lg-4">
-
                     <div className='d-flex fw-bold  align-items-center my-4 '>
                         <div>
                             <GeoAltFill className='icon'></GeoAltFill>
                         </div>
                         <span className='ms-3'>Raozan, Chittagong</span>
                     </div>
-
                     <div className='d-flex  fw-bold  align-items-center my-4'>
                         <div>
                             <Envelope className='icon text-dark'></Envelope>
@@ -42,10 +73,23 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <h4> From</h4>
-                    <div >
-                        <input className='w-75  mx-auto inputFrom' type="text" name="name" id="" />
-                    </div>
+
+
+                    <form ref={form} onSubmit={handleFormSubmit} >
+                        <input className='nameInput  mx-auto inputFrom' placeholder='Your Full Name' type="text" name="name" id="" required />
+                        <div className='mt-3 d-flex justify-content-center  align-items-center'>
+                            <div className=' emailInput' >
+                                <input className='w-100 inputFrom ' placeholder='Your Email' type="email" name="email" id="" required />
+                            </div>
+                            <div className='numberInput mx-1'>
+                                <input className='w-100 inputFrom' placeholder='Your Number' type="number" name="number" id="" required />
+                            </div>
+                        </div>
+                        <div>
+                            <textarea className='w-75 my-3 ' placeholder='Enter Your Message' name='message' required></textarea>
+                        </div>
+                        <input className='submit' type="submit" value="Submit" />
+                    </form>
                 </div>
             </div>
         </div>

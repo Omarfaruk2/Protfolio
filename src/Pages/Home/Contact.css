@@ -6,15 +6,59 @@
     background-color: #0fb;
 }
 
+.submit {
+    background-color: #0fb;
+    color: black;
+    padding: 10px 40px;
+    border-radius: 15px;
+}
+
 .width {
     width: 100%;
 }
 
 .inputFrom {
-    border-radius: 20px;
+    border-radius: 3rem;
+    padding: 6px 25px;
     color: white;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 17px;
     background-color: #212121;
-    border-color: #0fb;
+    border: 1px solid white;
+}
+
+.inputFrom:focus {
+    outline: 1px solid rgb(29, 255, 195);
+    background-color: #212121;
+}
+
+textarea:focus {
+    outline: 1px solid rgb(0, 212, 156);
+}
+
+textarea {
+    border-radius: .5rem;
+    padding: 6px 25px;
+    color: white;
+    font-weight: 200;
+    height: 150px;
+    font-size: 17px;
+    background-color: #212121;
+    border: 1px solid white;
+}
+
+.nameInput {
+    width: 80%;
+}
+
+@media only screen and (max-width: 576px) {
+    .emailInput {
+        width: 40%;
+        margin: 0;
+    }
+
+    .numberInput {
+        width: 40%;
+        margin: 0;
+    }
 }

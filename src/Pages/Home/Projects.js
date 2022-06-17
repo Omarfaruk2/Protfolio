@@ -17,7 +17,7 @@ const Projects = () => {
             <h2 className='text-white mb-5' data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom">My Projects</h2>
             <div className='row m-0 p-0'>
-                <div className='col-lg-4'
+                <div className='col-lg-4 my-3'
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="700"
@@ -50,7 +50,7 @@ const Projects = () => {
                 </div>
 
                 {/* Number 2 */}
-                <div className='col-lg-4'
+                <div className='col-lg-4 my-3'
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="1100"
@@ -84,7 +84,7 @@ const Projects = () => {
                     </Card>
                 </div>
                 {/* Number 3 */}
-                <div className='col-lg-4'
+                <div className='col-lg-4 my-3'
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                     data-aos-duration="2000"

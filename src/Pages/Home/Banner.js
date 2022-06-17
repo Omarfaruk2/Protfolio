@@ -40,7 +40,7 @@ const Banner = () => {
                         HI THERE I'M
                     </h4>
                     <h3 className='text-center ms-5'>
-                        <TextTransition
+                        <TextTransition className='ms-5'
                             text={TEXTS[index % TEXTS.length]}
                             springConfig={presets.wobbly}
                         />
