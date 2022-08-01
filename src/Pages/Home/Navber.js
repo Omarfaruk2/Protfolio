@@ -26,7 +26,8 @@ const Navber = () => {
                             <Nav.Link href="#deets">Contace Me</Nav.Link>
                             <Nav.Link href="#deets">
                                 <>
-                                    <Button className='p-0 m-0 b-0' variant="outline-primary">Download Resume</Button>
+                                    <a href="https://drive.google.com/file/d/1r0vrzAWEEFRNlckn9GHY24MYlAFHav0a/view?usp=sharing" target="_blank" rel="noopener noreferrer"> Download Resume
+                                    </a>
                                 </>
                             </Nav.Link>
 

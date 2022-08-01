@@ -26,13 +26,13 @@ const Projects = () => {
                         <Card.Img variant="top" src={img1} />
                         <Card.Body>
                             <Card.Title >Lights Manufacturer </Card.Title>
-                            <Card.Text className='hight'>
+                            {/* <Card.Text className='hight'>
                                 Any user can order bulbs from here and pay the order by credit or debit card..
                                 If he pays the price then he cannot cancel the order. You must login before ordering bulbs.
                                 Admin can add and delete new bulbs if desired.Admin can make new admin.Unapproved, forbidden access protected by JWT. <br />
                                 <b>Technology Used:</b> HTML, CSS3, Tailwind CSS, Daisy UI, React.js, Node.js, Express.js,Mongodb, Firebase, JWT.
 
-                            </Card.Text>
+                            </Card.Text> */}
                             {/*-------------------- Button ----------------*/}
 
                             <a href="https://assigment-12-12cd5.web.app/" target="_blank" rel="noreferrer" >
@@ -59,7 +59,7 @@ const Projects = () => {
                         <Card.Img variant="top" src={img2} />
                         <Card.Body>
                             <Card.Title >MOBILE-HUNTER </Card.Title>
-                            <Card.Text className='hight'>
+                            {/* <Card.Text className='hight'>
                                 This is a mobile stock update and stock reduction dynamic website. A user can update or reduce the stock of the mobile as per his choice and also see the details of that product..
                                 He can add or delete any new product if he wants.
                                 Under no circumstances will the user be able to perform the functions of the Website without logging in
@@ -67,7 +67,7 @@ const Projects = () => {
                                 <b>Technology Used:</b> HTML, CSS3, Bootstrap, React.js, Node.js, Express.js,Mongodb, Firebase, JWT.
 
 
-                            </Card.Text>
+                            </Card.Text> */}
                             {/*-------------------- Button ----------------*/}
 
                             <a href="https://assigment-11-d5db3.web.app/" target="_blank" rel="noreferrer">
@@ -93,13 +93,13 @@ const Projects = () => {
                         <Card.Img variant="top" src={img3} />
                         <Card.Body>
                             <Card.Title >Dynamo Fitness </Card.Title>
-                            <Card.Text className='hight'>
+                            {/* <Card.Text className='hight'>
                                 This is a gym related website. If you want any use you can buy gym course of your choice.
                                 In this case, he is obliged to login.
                                 <br />
                                 <b>Technology Used:</b> HTML, CSS3, Boostrap, React.js,React router etc.
 
-                            </Card.Text>
+                            </Card.Text> */}
                             {/*-------------------- Button ----------------*/}
 
                             <a href="https://gym-center-f59ed.web.app/" target="_blank" rel="noreferrer">

@@ -3,6 +3,7 @@ import Footer from '../Shate/Footer'
 import About from './About'
 import Banner from './Banner'
 import Contact from './Contact'
+// import FindeMe from './FindeMe'
 import "./Home.css"
 import Navber from './Navber'
 import Projects from './Projects'
@@ -18,8 +19,10 @@ const Home = () => {
                 <About></About>
                 <Projects></Projects>
                 <Contact></Contact>
-                <Footer></Footer>
+                {/* <FindeMe></FindeMe> */}
+
             </div>
+            <Footer></Footer>
 
 
 
