@@ -26,7 +26,7 @@ const Navber = () => {
                             <Nav.Link href="#deets">Contace Me</Nav.Link>
                             <Nav.Link href="#deets">
                                 <>
-                                    <a href="https://drive.google.com/file/d/1r0vrzAWEEFRNlckn9GHY24MYlAFHav0a/view?usp=sharing" target="_blank" rel="noopener noreferrer"> Download Resume
+                                    <a href="https://drive.google.com/file/d/1CwzQ3u1xG7GyfW52xf8FtDijfzY0QElu/view?usp=sharing" target="_blank" rel="noopener noreferrer"> Download Resume
                                     </a>
                                 </>
                             </Nav.Link>
